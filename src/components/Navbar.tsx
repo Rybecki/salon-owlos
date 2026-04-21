@@ -33,7 +33,6 @@ export default function Navbar() {
           <img src={ASSETS.LOGO} alt="O Włos Logo" className="h-10 w-auto group-hover:scale-110 transition-transform duration-300" />
         </Link>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <Link
@@ -53,13 +52,11 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile Toggle */}
         <button className={`md:hidden ${isDarkNavbar ? "text-white" : "text-black"}`} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

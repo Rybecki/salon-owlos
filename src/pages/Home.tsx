@@ -40,7 +40,6 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      {/* Hero Section */}
       <section
         className="relative h-screen flex items-center justify-center overflow-hidden"
         onMouseMove={handleHeroMouseMove}
@@ -101,7 +100,6 @@ export default function Home() {
 
       </section>
 
-      {/* About Section */}
       <section className="py-32 px-6 max-w-7xl mx-auto bg-soft-bg">
         <div className="max-w-5xl mx-auto">
           <span className="text-gold uppercase tracking-widest text-sm mb-4 block text-center">Pasja i Doświadczenie</span>
@@ -162,7 +160,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Offer Icons */}
       <section className="py-24 bg-soft-bg border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {categories.map((item, idx) => (
@@ -181,7 +178,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Highlight */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
@@ -208,7 +204,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
       <section className="py-32 bg-soft-bg relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-5 flex items-center justify-center">
             <span className="text-[20vw] font-serif font-bold select-none">OPINIE</span>
@@ -263,7 +258,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
       <section ref={ctaRef} className="py-40 relative bg-black text-white overflow-hidden">
         <motion.div className="absolute inset-0 z-0" style={{ y: ctaBackgroundY }}>
           <img src={ASSETS.FRYZURY[9]} className="w-full h-[115%] object-cover opacity-20" alt="CTA backdrop" referrerPolicy="no-referrer" />

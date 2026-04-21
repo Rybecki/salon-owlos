@@ -41,7 +41,6 @@ export default function Gallery() {
         ))}
       </div>
 
-      {/* Lightbox */}
       <AnimatePresence>
         {selectedImg && (
           <motion.div
